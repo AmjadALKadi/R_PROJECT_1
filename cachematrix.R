@@ -3,15 +3,15 @@
 
 
 makeCacheMatrix <- function(x = matrix()) {
-                    nel <- NULL 
-                    pro <- function(a){
+                    nel <- NULL                                    ## nel = null make var  = null
+                    pro <- function(a){                            ## that function to store tempo var in x 
                       x <<- a 
-                      nel <<- NULL
+                      nel <<- NULL                                 ## make the var nel = null again
                     }
-                    do <- function() {x}
+                    do <- function() {x}                           ## function to make x as input
                     setinvrse <- function(inverse) {nel <<- inverse}
                     getinvrse <- function() {nel}
-                    list(pro = pro , do = do , setinvrse =setinvrse , getinvrse=getinvrse)
+                    list(pro = pro , do = do , setinvrse =setinvrse , getinvrse=getinvrse)             ## make tempo list to store var x 
                     
 }
 
